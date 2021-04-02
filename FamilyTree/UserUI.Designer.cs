@@ -229,7 +229,7 @@ namespace FamilyTree
             this.Controls.Add(this.groupBoxForResult);
             this.Controls.Add(this.groupBoxForData);
             this.Name = "UserUI";
-            this.Text = "Form1";
+            this.Text = "Family Tree";
             this.Load += new System.EventHandler(this.UserUI_Load);
             this.groupBoxForData.ResumeLayout(false);
             this.groupBoxForData.PerformLayout();
