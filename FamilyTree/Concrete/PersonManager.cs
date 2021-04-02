@@ -20,10 +20,14 @@ namespace FamilyTree.Concrete
         }
         public IResult VerifyPerson(PersonForVerification data)
         {
+            int triggerForStop = 0;
             data.TargetNationalityId = _calculateBaseClass.Calculate(data.NationalityId);
             while (!_verificationService.CheckPerson(long.Parse(data.TargetNationalityId), data.TargetFirstName, data.TargetLastName, data.TargetBirthYear))
             {
+                triggerForStop++;
                 data.TargetNationalityId = _calculateBaseClass.Calculate(data.TargetNationalityId);
+                if (triggerForStop == 50)
+                    return new Result(false);
             }          
             return new Result(true, "Başarılı", data);
         }

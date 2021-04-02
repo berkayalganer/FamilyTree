@@ -205,10 +205,11 @@ namespace FamilyTree
             this.lblNationalityNumber.AutoSize = true;
             this.lblNationalityNumber.Font = new System.Drawing.Font("Playfair Display", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblNationalityNumber.ForeColor = System.Drawing.Color.Blue;
-            this.lblNationalityNumber.Location = new System.Drawing.Point(370, 35);
+            this.lblNationalityNumber.Location = new System.Drawing.Point(382, 35);
             this.lblNationalityNumber.Name = "lblNationalityNumber";
-            this.lblNationalityNumber.Size = new System.Drawing.Size(0, 32);
+            this.lblNationalityNumber.Size = new System.Drawing.Size(138, 32);
             this.lblNationalityNumber.TabIndex = 1;
+            this.lblNationalityNumber.Text = "Bekleyiniz...";
             // 
             // label6
             // 

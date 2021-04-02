@@ -45,7 +45,7 @@ namespace FamilyTree
             }
             else
             {
-                lblNationalityNumber.Text = "Hatalı değer!!!";
+                lblNationalityNumber.Text = "Değer bulunamıyor!!!";
             }
         }
 
