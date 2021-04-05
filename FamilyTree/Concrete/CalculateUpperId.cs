@@ -15,14 +15,14 @@ namespace FamilyTree.Concrete
 
             int firstPart = Convert.ToInt32(nationalityId.Substring(0, 5)) + 3;
             int secondPart = Convert.ToInt32(nationalityId.Substring(5, 4)) - 1;
-            if (Convert.ToInt32(nationalityId.Substring(3, 2)) >= 97)
-            {
-                valueForSub -= 2;
-            }
-            if (Convert.ToInt32(nationalityId.Substring(8, 1)) == 0)
-            {
-                valueForSub += 2;
-            }
+            //if (Convert.ToInt32(nationalityId.Substring(3, 2)) >= 97)
+            //{
+            //    valueForSub -= 2;
+            //}
+            //if (Convert.ToInt32(nationalityId.Substring(8, 1)) == 0)
+            //{
+            //    valueForSub += 2;
+            //}
             int lastPart = CalculateLastPart(Convert.ToInt32(nationalityId.Substring(10, 1)), valueForSub);
 
             int thirdPart = CalculateThirdPart(Convert.ToInt32(firstPart.ToString() + secondPart.ToString()), lastPart);

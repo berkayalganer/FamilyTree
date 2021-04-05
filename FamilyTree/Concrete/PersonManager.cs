@@ -26,7 +26,7 @@ namespace FamilyTree.Concrete
             {
                 triggerForStop++;
                 data.TargetNationalityId = _calculateBaseClass.Calculate(data.TargetNationalityId);
-                if (triggerForStop == 50)
+                if (triggerForStop == 100)
                     return new Result(false);
             }          
             return new Result(true, "Başarılı", data);

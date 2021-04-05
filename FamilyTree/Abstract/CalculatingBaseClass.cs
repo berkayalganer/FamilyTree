@@ -18,7 +18,7 @@ namespace FamilyTree.Abstract
                 total += number;
                 value /= 10;
             }
-            if ((total % 10) < lastPartOfNumber)
+            if ((total % 10) <= lastPartOfNumber)
             {
                 valueForReturn = lastPartOfNumber - (total % 10);
             }
